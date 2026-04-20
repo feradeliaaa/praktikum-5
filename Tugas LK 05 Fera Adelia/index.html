@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Evaluasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Evaluasi</h2>
+
+    <form id="contactForm">
+        <!-- Nama -->
+        <label>Nama:</label>
+        <input type="text" id="nama" placeholder="Masukkan nama" required>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Masukkan email" required>
+
+        <!-- No Telepon -->
+        <label>No Telepon:</label>
+        <input type="tel" id="telp" placeholder="Masukkan nomor HP" required>
+
+        <!-- Kategori -->
+        <label>Kategori:</label>
+        <select id="kategori" required>
+            <option value="">-- Pilih --</option>
+            <option value="Mahasiswa">Mahasiswa</option>
+            <option value="Dosen">Dosen</option>
+        </select>
+
+        <!-- Kesan -->
+        <label>Kesan dan Pesan:</label>
+        <textarea id="kesan" rows="3" placeholder="Tulis kesan dan pesan..." required></textarea>
+
+        <!-- Kritik & Saran -->
+        <label>Kritik dan Saran:</label>
+        <textarea id="pesan" rows="4" placeholder="Tulis kritik dan saran..." required></textarea>
+
+        <button type="submit">Kirim</button>
+    </form>
+</div>
+
+<div id="hasil"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
